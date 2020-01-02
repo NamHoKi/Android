@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".PostActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/but_text"
+                android:text="품목"
+                android:textSize="22sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/nickname_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/but_text"
+                android:text="작성자"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/contect_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@drawable/but_text"
+                android:text="내용"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="410dp"
+                android:layout_height="410dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/but_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/locationButton"
+                    android:layout_width="115dp"
+                    android:layout_height="130dp"
+                    android:background="@android:color/transparent"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/location_but" />
+
+                <Space
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/Point_Button"
+                    android:layout_width="115dp"
+                    android:layout_height="130dp"
+                    android:background="@android:color/transparent"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ck_found_but" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
